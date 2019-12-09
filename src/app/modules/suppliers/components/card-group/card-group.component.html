@@ -1,0 +1,28 @@
+<div class="card-group row">
+  <div
+    class="col-xl-4 col-md-6 mb-3"
+    *ngFor="let supplier of model | filter: searchText"
+  >
+    <summary [routerLink]="['./', supplier.id]" class="card bg-light mb-3">
+      <h5 class="card-header">{{ supplier.name }}</h5>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-5">מספר:</div>
+          <div class="col-7">{{ supplier.id }}</div>
+        </div>
+        <div class="row">
+          <div class="col-5">כתובת:</div>
+          <div class="col-7">{{ supplier.address }}</div>
+        </div>
+        <div class="row">
+          <div class="col-5">טלפון:</div>
+          <div class="col-7">{{ supplier.phone }}</div>
+        </div>
+        <div class="row">
+          <div class="col-5">דוא"ל:</div>
+          <div class="col-7" dir="ltr">{{ supplier.email }}</div>
+        </div>
+      </div>
+    </summary>
+  </div>
+</div>

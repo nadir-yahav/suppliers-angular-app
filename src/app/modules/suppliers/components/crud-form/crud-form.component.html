@@ -1,0 +1,66 @@
+<form #form="ngForm" (ngSubmit)="handleSubmit()">
+  <div class="bg-light border p-4 mb-4">
+    <button
+      type="submit"
+      *ngIf="!isEditMode"
+      (click)="isEditMode = !isEditMode"
+      class="btn btn-primary"
+    >
+      עריכה
+    </button>
+    <button
+      type="submit"
+      *ngIf="isEditMode && !isNew"
+      (click)="isEditMode = !isEditMode"
+      class="btn btn-primary ml-4"
+    >
+      ביטול עריכה
+    </button>
+    <button
+      type="submit"
+      [disabled]="!form.valid"
+      *ngIf="isEditMode"
+      class="btn btn-primary"
+    >
+      שמור
+    </button>
+  </div>
+  <div *ngFor="let key of Object.keys(model); let even = even">
+    <div
+      [ngClass]="{ 'bg-light': even }"
+      class="form-group row mb-0"
+      *ngIf="!isObject(model[key])"
+    >
+      <label class="col-sm-2 col-form-label" [attr.for]="key">{{ key }}</label>
+      <input
+        [type]="key == 'email' ? 'email' : 'text'"
+        [email]="key == 'email'"
+        [(ngModel)]="model[key]"
+        [name]="key"
+        [value]="model[key]"
+        class="col-sm-10 mb-2"
+        [readonly]="!isEditMode || key == 'id'"
+        [class.form-control]="isEditMode"
+        [class.form-control-plaintext]="!isEditMode"
+        [attr.aria-describedby]="key + ' Help'"
+        [placeholder]="'Enter ' + key"
+        required
+      />
+    </div>
+  </div>
+
+  <div *ngFor="let a of attr" class="form-check form-check-inline">
+    <input
+      [(ngModel)]="a.selected"
+      name="attributes{{ a.id }}"
+      class="form-check-input"
+      type="checkbox"
+      id="checkbox{{ a.id }}"
+      [value]="a.id"
+      [disabled]="!isEditMode"
+    />
+    <label class="form-check-label" for="checkbox{{ a.id }}">{{
+      a.value
+    }}</label>
+  </div>
+</form>

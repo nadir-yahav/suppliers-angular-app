@@ -1,0 +1,15 @@
+<div class="row justify-content-between bg-light mb-3 mr-1 ml-1 border p-3">
+  <div class="col-md-6 col-sm-12">
+    <search (onSearch)="searchText = $event"></search>
+  </div>
+  <div class="col-md-3 col-sm-12">
+    <button
+      [routerLink]="['./', 'new']"
+      type="submit"
+      class="btn btn-primary  btn-block mb-2 "
+    >
+      + הוספה
+    </button>
+  </div>
+</div>
+<card-group [model]="suppliers" [searchText]="searchText"></card-group>

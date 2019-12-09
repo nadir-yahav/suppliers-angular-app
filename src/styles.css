@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-v4-rtl/dist/css/bootstrap-rtl.css";
+
+body {
+  direction: rtl;
+  text-align: right;
+}
