@@ -1,0 +1,17 @@
+[
+  { "id": 1, "value": "X-Ray" },
+  { "id": 2, "value": "Dressing" },
+  { "id": 3, "value": "First aid" },
+  { "id": 4, "value": "C.T" },
+  { "id": 5, "value": "X-Ray" },
+  { "id": 6, "value": "Dressing" },
+  { "id": 7, "value": "First aid" },
+  { "id": 8, "value": "C.T" },
+  { "id": 9, "value": "C.T" },
+  { "id": 10, "value": "C.T" },
+  { "id": 11, "value": "X-Ray" },
+  { "id": 12, "value": "Dressing" },
+  { "id": 13, "value": "First aid" },
+  { "id": 14, "value": "C.T" },
+  { "id": 15, "value": "X-Ray" }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "name": "ספק 1",
+    "address": "כתובת 1",
+    "phone": "051-1111111",
+    "email": "1@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 2,
+    "name": "ספק 2",
+    "address": "כתובת 2",
+    "phone": "052-2222222",
+    "email": "2@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 3,
+    "name": "ספק 3",
+    "address": "כתובת 3",
+    "phone": "053-3333333",
+    "email": "3@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 4,
+    "name": "ספק 4",
+    "address": "כתובת 4",
+    "phone": "054-4444444",
+    "email": "4@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 5,
+    "name": "ספק 5",
+    "address": "כתובת 5",
+    "phone": "055-5555555",
+    "email": "5@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 6,
+    "name": "ספק 6",
+    "address": "כתובת 6",
+    "phone": "056-6666666",
+    "email": "6@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 7,
+    "name": "ספק 7",
+    "address": "כתובת 7",
+    "phone": "057-7777777",
+    "email": "7@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 8,
+    "name": "ספק 8",
+    "address": "כתובת 8",
+    "phone": "058-8888888",
+    "email": "8@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 9,
+    "name": "ספק 9",
+    "address": "כתובת 9",
+    "phone": "059-9999999",
+    "email": "9@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 10,
+    "name": "ספק 10",
+    "address": "כתובת 10",
+    "phone": "10-101010",
+    "email": "10@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 11,
+    "name": "ספק 11",
+    "address": "כתובת 11",
+    "phone": "11-111111",
+    "email": "11@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 12,
+    "name": "ספק 12",
+    "address": "כתובת 12",
+    "phone": "12-121212",
+    "email": "12@gmail.com",
+    "attributes": [1, 5]
+  },
+  {
+    "id": 13,
+    "name": "ספק 13",
+    "address": "כתובת 13",
+    "phone": "13-131313",
+    "email": "13@gmail.com",
+    "attributes": [1, 5]
+  }
+]
